@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: linear-gradient(to top, #bebebe, #eeeeee, #d2d2d2);
+}
+
+#dia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#dia .dia_data,
+#dia .rotina_atual {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dia .dia_data .dia_atual,
+#dia .dia_data .data_atual {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8a8a8a;
+}
+
+#dia .rotina_atual span {
+    font-size: 24px;
+    font-weight: 800;
+    color: #262626;
+}
+
+#card_principal {
+    width: 100%;
+    height: 150px;
+    margin: 15px 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #e6e9f0, #eeeeee);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#card_principal .animacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#card_principal .animacao,
+#card_principal.saudacao {
+    margin: 10px 0;
+}
+
+#card_principal .animacao .saudacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#card_principal .animacao .saudacao .titulo_principal {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#card_principal .animacao .saudacao .titulo_principal .titulo,
+#card_principal .animacao .saudacao .subtitulo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+}
+
+#card_principal .animacao .saudacao .titulo_principal .titulo p {
+    font-size: 18px;
+    font-weight: 800;
+    color: #262626;
+}
+
+#card_principal .animacao .saudacao .subtitulo p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8a8a8a;
+}
+
+#card_principal .animacao .saudacao .titulo_principal .emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card_principal .animacao .saudacao .titulo_principal .emoji img {
+    width: 25px;
+}
+
+#card_principal .animacao .horario_atual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#card_principal .animacao .horario_atual span {
+    font-size: 48px;
+    font-weight: 800;
+    color: #262626;
+}
+
+#atividades {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#atividades .atividade {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, #e6e9f0, #eeeeee);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#atividades .atividade .emoji {
+    border-radius: 5px;
+    padding: 7px;
+    background: linear-gradient(to top, #dee0e6, #fafafa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#atividades .atividade .emoji img {
+    width: 25px;
+}
+
+#atividades .atividade .titulos .titulo p {
+    font-size: 15px;
+    font-weight: 800;
+    color: #262626;
+}
+
+#atividades .atividade .titulos .subtitulo p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #8a8a8a;
+}
+
+#atividades .atividade .tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#atividades .atividade .tempo .minutos span {
+    font-size: 24px;
+    font-weight: 800;
+    color: #262626;
+    position: relative;
+    top: 7px;
+}
+
+#atividades .atividade .tempo .texto span {
+    font-size: 6px;
+    font-weight: 600;
+    color: #262626;
+    position: relative;
+    top: -6px;
+}
+
+#card_principal .atividade_atual {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card_principal .atividade_atual .atividade {
+    width: 95%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, #e6e9f0, #eeeeee);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#card_principal .atividade_atual .atividade .emoji {
+    border-radius: 5px;
+    padding: 7px;    
+    background: linear-gradient(to top, #dee0e6, #fafafa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card_principal .atividade_atual .atividade .emoji img {
+    width: 25px;
+}
+
+#card_principal .atividade_atual .atividade .titulos .titulo p {
+    font-size: 12px;
+    font-weight: 800;
+    color: #262626;
+}
+
+#card_principal .atividade_atual .atividade .titulos .subtitulo p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #8a8a8a;
+}
+
+#card_principal .atividade_atual .atividade .tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#card_principal .atividade_atual .atividade .tempo .minutos span {
+    font-size: 24px;
+    font-weight: 800;
+    color: #262626;
+    position: relative;
+    top: 7px;
+}
+
+#card_principal .atividade_atual .atividade .tempo .texto span {
+    font-size: 6px;
+    font-weight: 600;
+    color: #262626;
+    position: relative;
+    top: -6px;
+}
