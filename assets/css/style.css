@@ -47,7 +47,7 @@ main {
     color: #262626;
 }
 
-#card_principal .atv{
+#card_principal .atv {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,10 +55,10 @@ main {
     top: 14px;
 }
 
-#card_principal .atv span{
-    font-size: 5px;
+#card_principal .atv span {
+    font-size: 8px;
     font-weight: 800;
-    color: #0e7bdc; 
+    color: #0e7bdc;
     letter-spacing: 1px;
 }
 
@@ -194,7 +194,8 @@ main {
     justify-content: center;
 }
 
-#atividades .atividade .tempo .minutos span {
+#atividades .atividade .tempo .minutos span,
+#atividades .atividade .tempo .hora span {
     font-size: 24px;
     font-weight: 800;
     color: #262626;
@@ -232,7 +233,7 @@ main {
 #card_principal .atividade_atual .atividade .emoji {
     border-radius: 5px;
     width: 40px;
-    height: 40px;  
+    height: 40px;
     background: linear-gradient(to top, #dee0e6, #fafafa);
     display: flex;
     align-items: center;
@@ -278,7 +279,7 @@ main {
     top: -6px;
 }
 
-#atividades .atividade .titulos{
+#atividades .atividade .titulos {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -286,10 +287,10 @@ main {
     justify-content: center;
 }
 
-#atividades .atividade .emoji{
+#atividades .atividade .emoji {
     margin-right: 15px;
 }
 
-#atividades .atividade .tempo{
+#atividades .atividade .tempo {
     margin-left: 15px;
 }
