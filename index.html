@@ -20,7 +20,7 @@
 
 <body>
     <main>
-        <section id="dia">
+        <section id="dia" onclick="mudarRotina()">
             <div class="dia_data">
                 <span class="dia_atual">
                     Domingo
@@ -29,7 +29,7 @@
                     , 24 de novembro
                 </span>
             </div>
-            <div class="rotina_atual">
+            <div class="rotina_atual" >
                 <span>Dia de folga</span>
             </div>
         </section>
@@ -82,559 +82,899 @@
         </section>
 
         <section id="atividades">
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_dormir.png" alt="Emoji de amanhecer.">
-                </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Acordar e alongar</p>
+            <section class="atividades util">
+                <section class="atividades util">
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/sun.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Acordar e alongar</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Alongamento</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>10</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="subtitulo">
-                        <p>Estique-se antes que o dia te dobre!</p>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/coffee.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Café e lanche</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Preparar café</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>30</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>10</span>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/bed.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Arrumar a cama</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Arrumar cama</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>05</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/briefcase.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Mochila e lanche</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Preparar lanche</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>10</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/shower.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Banho e se arrumar</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Higiene e vestir-se</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>15</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_sandwich.png" alt="Emoji de café.">
-                </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Café e lanche</p>
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/car.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Saida e viagem</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Deslocamento</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>40</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="subtitulo">
-                        <p>Para levar ao trabalho!</p>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/work.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Trabalhar</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Trabalho</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="hora">
+                                <span>12</span>
+                            </div>
+                            <div class="texto">
+                                <span>HORAS</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>30</span>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/house.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Voltar para casa</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Deslocamento</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>30</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/dinner.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Fazer o jantar</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Preparar jantar</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>30</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/icon_cama.png" alt="Emoji de cama.">
-                </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Arrumar a cama</p>
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/plant-care.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Regar as plantas</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Cuide das plantas</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>05</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="subtitulo">
-                        <p>Organize o ninho de rato!</p>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/water-bottle.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Encher as garrafas</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Hidratação</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>05</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>05</span>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/dishes.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Lavar as louças</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Louças limpas</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>20</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/video.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Esposa</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Descontrair</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="hora">
+                                <span>01</span>
+                            </div>
+                            <div class="texto">
+                                <span>HORA</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_mochila.png" alt="Emoji de mochila.">
-                </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Mochila e lanche</p>
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/game-controller.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Lazer (jogos no Xbox)</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Relaxar jogando</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="minutos">
+                                <span>20</span>
+                            </div>
+                            <div class="texto">
+                                <span>MINUTOS</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="subtitulo">
-                        <p>Organizar tudo para sair!</p>
+                    
+                
+                    <div class="atividade">
+                        <div class="emoji">
+                            <img src="https://img.icons8.com/ios/50/000000/bed.png" alt="Emoji">
+                        </div>
+                        <div class="titulos">
+                            <div class="titulo">
+                                <p>Dormir</p>
+                            </div>
+                            <div class="subtitulo">
+                                <p>Descanso</p>
+                            </div>
+                        </div>
+                        <div class="tempo">
+                            <div class="hora">
+                                <span>07</span>
+                            </div>
+                            <div class="texto">
+                                <span>HORAS</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>10</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
+                </section>
+                
+            </section>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_sabonete.png" alt="Emoji de banho.">
+            <section class="atividades folga">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_dormir.png" alt="Emoji de amanhecer.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Acordar e alongar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Estique-se antes que o dia te dobre!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>10</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Banho e se arrumar</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Ficar cheiroso!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>15</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_hospital.png" alt="Emoji de translado.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_sandwich.png" alt="Emoji de café.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Café e lanche</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Para levar ao trabalho!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>30</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Saida e viagem</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>A jornada começa, bora lá!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>40</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_moto.png" alt="Emoji de compras.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/icon_cama.png" alt="Emoji de cama.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Arrumar a cama</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Organize o ninho de rato!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>05</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Casa e compras</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Organize suas pendências!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>30</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_cueca.png" alt="Emoji de lavanderia.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_mochila.png" alt="Emoji de mochila.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Mochila e lanche</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Organizar tudo para sair!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>10</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Lavar roupas</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Roupa limpa, vida organizada!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>30</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_livros.png" alt="Emoji de estudo.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_sabonete.png" alt="Emoji de banho.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Banho e se arrumar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Ficar cheiroso!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>15</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Estudar</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Assistir as aulas!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>01</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORA</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_programador.png" alt="Emoji de prática.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_hospital.png" alt="Emoji de translado.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Saida e viagem</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>A jornada começa, bora lá!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>40</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Estudar</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Hora de práticar!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>01</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORA</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_atividades.png" alt="Emoji de atividades.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_moto.png" alt="Emoji de compras.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Casa e compras</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Organize suas pendências!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>30</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Estudar</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Fazer atividades!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>30</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_tinta.png" alt="Emoji de design.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_cueca.png" alt="Emoji de lavanderia.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Lavar roupas</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Roupa limpa, vida organizada!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>30</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>UI Design</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Deixe sua criatividade fluir!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>01</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORA</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_bandeira.png" alt="Emoji de idiomas.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_livros.png" alt="Emoji de estudo.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Estudar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Assistir as aulas!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>01</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Idiomas</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Duolinguo!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>30</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_macarronada.png" alt="Emoji de almoço.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_programador.png" alt="Emoji de prática.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Estudar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Hora de práticar!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>01</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Almoçar / Pausa</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Recarregue as energias!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>01</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORA</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_alvo.png" alt="Emoji de projetos.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_atividades.png" alt="Emoji de atividades.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Estudar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Fazer atividades!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>30</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Projetos pessoais</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Trabalhe no que te motiva!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>01</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORA</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_vassoura.png" alt="Emoji de limpeza.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_tinta.png" alt="Emoji de design.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>UI Design</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Deixe sua criatividade fluir!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>01</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Organizar a casa</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Mantenha o lar em ordem!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>02</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORAS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_carrinho.png" alt="Emoji de compras.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_bandeira.png" alt="Emoji de idiomas.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Idiomas</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Duolinguo!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>30</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Compras / Lanche</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Pedir e preparar!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>30</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_frango.png" alt="Emoji de jantar.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_macarronada.png" alt="Emoji de almoço.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Almoçar / Pausa</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Recarregue as energias!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>01</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Fazer o jantar</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Delicie-se com sua refeição!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>01</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORA</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_plantas.png" alt="Emoji de plantas.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_alvo.png" alt="Emoji de projetos.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Projetos pessoais</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Trabalhe no que te motiva!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>01</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Regar as plantas</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Cuidado com sua mini floresta!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>10</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_água.png" alt="Emoji de garrafas.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_vassoura.png" alt="Emoji de limpeza.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Organizar a casa</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Mantenha o lar em ordem!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>02</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORAS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Encher as garrafas</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Mantenha a hidratação em dia!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>10</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_pratos.png" alt="Emoji de louças.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_carrinho.png" alt="Emoji de compras.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Compras / Lanche</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Pedir e preparar!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>30</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Lavar as louças</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Deixe a cozinha brilhando!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>30</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_banho.png" alt="Emoji de banho noturno.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_frango.png" alt="Emoji de jantar.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Fazer o jantar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Delicie-se com sua refeição!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>01</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORA</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Banho e se arrumar</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Relaxe antes do descanso!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>20</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_pensamento.png" alt="Emoji de planejamento.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_plantas.png" alt="Emoji de plantas.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Regar as plantas</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Cuidado com sua mini floresta!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>10</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Planejar e organizar</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Rotina e finanças!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="minutos">
-                        <span>20</span>
-                    </div>
-                    <div class="texto">
-                        <span>MINUTOS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_videogame.png" alt="Emoji de lazer.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_água.png" alt="Emoji de garrafas.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Encher as garrafas</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Mantenha a hidratação em dia!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>10</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Lazer (jogos no Xbox)</p>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Divirta-se e relaxe!</p>
-                    </div>
-                </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>03</span>
-                    </div>
-                    <div class="texto">
-                        <span>HORAS</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="atividade">
-                <div class="emoji">
-                    <img src="media/icones/Icon_dormir.png" alt="Emoji de dormir.">
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_pratos.png" alt="Emoji de louças.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Lavar as louças</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Deixe a cozinha brilhando!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>30</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="titulos">
-                    <div class="titulo">
-                        <p>Dormir</p>
+
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_banho.png" alt="Emoji de banho noturno.">
                     </div>
-                    <div class="subtitulo">
-                        <p>Sono da beleza!</p>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Banho e se arrumar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Relaxe antes do descanso!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>20</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
                     </div>
                 </div>
-                <div class="tempo">
-                    <div class="hora">
-                        <span>08</span>
+
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_pensamento.png" alt="Emoji de planejamento.">
                     </div>
-                    <div class="texto">
-                        <span>HORAS</span>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Planejar e organizar</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Rotina e finanças!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="minutos">
+                            <span>20</span>
+                        </div>
+                        <div class="texto">
+                            <span>MINUTOS</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_videogame.png" alt="Emoji de lazer.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Lazer (jogos no Xbox)</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Divirta-se e relaxe!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>03</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORAS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="atividade">
+                    <div class="emoji">
+                        <img src="media/icones/Icon_dormir.png" alt="Emoji de dormir.">
+                    </div>
+                    <div class="titulos">
+                        <div class="titulo">
+                            <p>Dormir</p>
+                        </div>
+                        <div class="subtitulo">
+                            <p>Sono da beleza!</p>
+                        </div>
+                    </div>
+                    <div class="tempo">
+                        <div class="hora">
+                            <span>08</span>
+                        </div>
+                        <div class="texto">
+                            <span>HORAS</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </section>
 
     </main>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

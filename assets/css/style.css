@@ -141,7 +141,12 @@ main {
     color: #262626;
 }
 
-#atividades {
+#atividades{
+    width: 100%;
+}
+
+#atividades .atividades.folga,
+#atividades .atividades.util {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -149,7 +154,8 @@ main {
     justify-content: center;
 }
 
-#atividades .atividade {
+#atividades .atividades.folga .atividade,
+#atividades .atividades.util .atividade {
     width: 100%;
     height: 70px;
     margin: 5px 0;
@@ -162,7 +168,8 @@ main {
     padding: 5px 10px;
 }
 
-#atividades .atividade .emoji {
+#atividades .atividades.folga .atividade .emoji,
+#atividades .atividades.util .atividade .emoji {
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -172,31 +179,37 @@ main {
     justify-content: center;
 }
 
-#atividades .atividade .emoji img {
+#atividades .atividades.folga .atividade .emoji img,
+#atividades .atividades.util .atividade .emoji img {
     width: 25px;
 }
 
-#atividades .atividade .titulos .titulo p {
+#atividades .atividades.folga .atividade .titulos .titulo p,
+#atividades .atividades.util .atividade .titulos .titulo p {
     font-size: 15px;
     font-weight: 800;
     color: #262626;
 }
 
-#atividades .atividade .titulos .subtitulo p {
+#atividades .atividades.folga .atividade .titulos .subtitulo p,
+#atividades .atividades.util .atividade .titulos .subtitulo p {
     font-size: 10px;
     font-weight: 500;
     color: #8a8a8a;
 }
 
-#atividades .atividade .tempo {
+#atividades .atividades.folga .atividade .tempo,
+#atividades .atividades.util .atividade .tempo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#atividades .atividade .tempo .minutos span,
-#atividades .atividade .tempo .hora span {
+#atividades .atividades.folga .atividade .tempo .minutos span,
+#atividades .atividades.util .atividade .tempo .minutos span,
+#atividades .atividades.folga .atividade .tempo .hora span,
+#atividades .atividades.util .atividade .tempo .hora span {
     font-size: 24px;
     font-weight: 800;
     color: #262626;
@@ -204,13 +217,34 @@ main {
     top: 7px;
 }
 
-#atividades .atividade .tempo .texto span {
+#atividades .atividades.folga .atividade .tempo .texto span,
+#atividades .atividades.util .atividade .tempo .texto span {
     font-size: 6px;
     font-weight: 600;
     color: #262626;
     position: relative;
     top: -6px;
 }
+
+#atividades .atividades.folga .atividade .titulos,
+#atividades .atividades.util .atividade .titulos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#atividades .atividades.folga .atividade .emoji,
+#atividades .atividades.util .atividade .emoji {
+    margin-right: 15px;
+}
+
+#atividades .atividades.folga .atividade .tempo,
+#atividades .atividades.util .atividade .tempo {
+    margin-left: 15px;
+}
+
 
 #card_principal .atividade_atual {
     width: 100%;
@@ -281,18 +315,3 @@ main {
     top: -6px;
 }
 
-#atividades .atividade .titulos {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-
-#atividades .atividade .emoji {
-    margin-right: 15px;
-}
-
-#atividades .atividade .tempo {
-    margin-left: 15px;
-}
