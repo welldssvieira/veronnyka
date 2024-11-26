@@ -34,12 +34,12 @@ main {
     justify-content: center;
 }
 
-#dia .dia_data .dia_atual,
-#dia .dia_data .data_atual {
+#dia .dia_data span{
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     color: #8a8a8a;
 }
+
 
 #dia .rotina_atual span {
     font-size: 24px;
@@ -132,23 +132,30 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
 }
 
 #card_principal .animacao .horario_atual span {
     font-size: 48px;
     font-weight: 800;
     color: #262626;
+    display: none;
 }
 
 #atividades{
     width: 100%;
 }
 
+#atividades .atividades.util{
+    display: none;
+}
+
+#atividades .atividades.folga{
+    display: flex;
+}
+
 #atividades .atividades.folga,
 #atividades .atividades.util {
     width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -157,7 +164,7 @@ main {
 #atividades .atividades.folga .atividade,
 #atividades .atividades.util .atividade {
     width: 100%;
-    height: 70px;
+    height: 100px;
     margin: 5px 0;
     display: flex;
     align-items: center;
@@ -196,6 +203,33 @@ main {
     font-size: 10px;
     font-weight: 500;
     color: #8a8a8a;
+}
+#atividades .atividades.util .atividade .titulos .titulo,
+#atividades .atividades.util .atividade .titulos .subtitulo,
+#atividades .atividades.util .atividade .titulos .intervalo,
+#atividades .atividades.folga .atividade .titulos .titulo,
+#atividades .atividades.folga .atividade .titulos .subtitulo,
+#atividades .atividades.folga .atividade .titulos .intervalo{
+    margin: 1px 0;
+}
+
+#atividades .atividades.util .atividade .titulos .intervalo,
+#atividades .atividades.folga .atividade .titulos .intervalo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #0e7bdc;
+    width: 85px;
+    height: 15px;
+    border-radius: 50px;
+}
+
+#atividades .atividades.util .atividade .titulos .intervalo p,
+#atividades .atividades.folga .atividade .titulos .intervalo p  {
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 #atividades .atividades.folga .atividade .tempo,
