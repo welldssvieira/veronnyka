@@ -23,16 +23,16 @@ function mudarRotina() {
     });
 };
 
-window.onload = function dataAtual(){
+window.onload = function dataAtual() {
     diasSemana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado"]
     mesesAno = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
-    
+
     Diahoje = new Date()
-    
+
     diasSemana = diasSemana[Diahoje.getDay()]
-    
+
     dataHojeMes = Diahoje.getDate()
-    
+
     nomeMesAtual = mesesAno[Diahoje.getMonth()]
 
     const dataInline = document.querySelector("#dia .dia_data");
@@ -42,18 +42,35 @@ window.onload = function dataAtual(){
 
 function obterHoraFormatada() {
     const horaAtual = new Date();
-    
+
     // Obtém a hora e os minutos
     let horas = horaAtual.getHours();
     let minutos = horaAtual.getMinutes();
-    
+
     // Adiciona zero à esquerda se a hora ou minutos forem menores que 10
     horas = horas < 10 ? '0' + horas : horas;
     minutos = minutos < 10 ? '0' + minutos : minutos;
-    
+
     // Retorna a hora no formato 15:40
     return `${horas}:${minutos}`;
 }
+
+window.onload = function saudacaoHorario() {
+    const saudacao = document.querySelector("#card_principal .animacao .saudacao .titulo_principal .titulo p");
+    const horaAtual = new Date();
+
+    // Obtém a hora e os minutos
+    let horas = horaAtual.getHours();
+    
+    if (horas >= 5 && horas <= 12) {
+        saudacao.innerHTML = "Bom dia, Wellington"
+    } else if (horas >= 13 && horas <= 18){
+        saudacao.innerHTML = "Boa tarde, Wellington"
+    } else{
+        saudacao.innerHTML = "Boa noite, Wellington"
+    }
+}
+
 /*
 window.onload = function tarefaAtual() {
     // Seleciona os elementos necessários
